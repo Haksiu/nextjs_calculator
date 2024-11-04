@@ -28,6 +28,7 @@ export default function Home() {
 
   const backspace = () => {
     setCalc(calc.slice(0, -1)); // Usuwa ostatni znak
+    setResult(result.slice(0, -1));
     if (calc.length === 1) {
       setResult("");
     }
